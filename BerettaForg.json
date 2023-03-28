@@ -1,0 +1,66 @@
+{
+  "openapi": "3.0.2",
+  "info": {
+    "tittle": "Beretta Forg IoT analytics",
+    "version": "1",
+    "description": "OpenApi for Beretta",
+    "termsOfService": "https://github.com/muhammadfauzandotexe",
+    "contact": {
+      "name": "Muhammad Fauzan",
+      "email": "mfauzan51087@gmail.com",
+      "url": "https://github.com/muhammadfauzandotexe"
+    },
+    "license": {
+      "name": "APACHE 2.0",
+      "url": "https://www.apache.org/license/LICENSE-2.0"
+    }
+  },
+  "servers": [
+    {
+      "description": "Send data to Specific Field ",
+      "url": "https://{environment}/muhammadfauzan.com/api/v1",
+      "variables": {
+        "environment": {
+          "description": "Server Environment",
+          "default": "localhost:8080",
+          "enum": [
+            "docker",
+            "ngrok",
+            "localhost:8080"
+          ]
+        }
+      }
+    }
+  ],
+  "externalDocs": {
+    "description": "Youtube Programmer Zaman Now",
+    "url": "https://youtube.com"
+  },
+  "paths": {
+    "/todolist": {
+      "get": {
+        "summary": "Get All todolist",
+        "description": "Get All active todolist",
+        "responses": {
+
+        }
+      },
+      "post": {
+        "summary": "Create New ToDolist",
+        "description": "Cretae New to do list",
+        "responses": {
+
+        }
+      }
+    },
+    "todolist/{todolistid}": {
+      "put": {
+        "summary": "update existing to dolist",
+        "description": "Update existing in databse"
+      },
+      "delete": {
+
+      }
+    }
+  }
+}
